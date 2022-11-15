@@ -6,6 +6,8 @@
 }
 body {
   font-family: var(--default-font-family);
+  background-color: rgba(249, 196, 172, 0.4) !important;
+  color: var(--primary-color) !important;
 }
 h1,
 h2,
@@ -16,8 +18,12 @@ h3 {
 h1 {
   font-size: 96px;
 }
+h2 {
+  font-size: 64px;
+}
 p {
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.7;
 }
 .hero {
   background: var(--primary-color) !important;
@@ -31,6 +37,7 @@ p {
 }
 .hero p {
   font-weight: bold;
+  font-size: 24px;
 }
 .contact-button {
   background: var(--secondary-color);
@@ -40,5 +47,25 @@ p {
   padding: 10px;
 }
 .contact-button:hover {
-  color: white;
+  color: var(--primary-color);
+}
+.btn-branding {
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+}
+.btn-branding:hover {
+  color: var(--primary-color);
+}
+.project-description {
+  padding: 120px 60px;
+}
+
+@media (max-width: 960px) {
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
