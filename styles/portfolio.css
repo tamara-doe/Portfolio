@@ -1,12 +1,44 @@
-body {
-  background: red !important;
+:root {
+  --primary-color: #272637;
+  --secondary-color: rgba(249, 196, 172, 0.8);
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Roboto", sans-serif;
 }
-
-h1 {
-  font-family: "Poppins", sans-serif;
+body {
+  font-family: var(--default-font-family);
+}
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font-family);
   font-weight: bold;
 }
-
+h1 {
+  font-size: 96px;
+}
 p {
-  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.hero {
+  background: var(--primary-color) !important;
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 40px;
+}
+.hero h2 {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+}
+.hero p {
+  font-weight: bold;
+}
+.contact-button {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.contact-button:hover {
+  color: white;
 }
