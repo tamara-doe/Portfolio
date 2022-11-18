@@ -3,6 +3,7 @@
   --secondary-color: rgba(249, 196, 172, 0.8);
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Roboto", sans-serif;
+  --hover-color: #975a5e;
 }
 body {
   font-family: var(--default-font-family);
@@ -45,7 +46,15 @@ nav a {
 }
 nav a:hover,
 nav li.active a {
-  color: gray;
+  color: var(--hover-color);
+}
+
+.email a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.email a:hover {
+  color: var(--hover-color);
 }
 
 .hero {
@@ -68,22 +77,27 @@ nav li.active a {
   text-decoration: none;
   border-radius: 5px;
   padding: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.1);
 }
 .contact-button:hover {
   color: var(--primary-color);
+  padding: 12px;
 }
 .btn-branding {
-  color: var(--primary-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
   text-decoration: none;
   border-radius: 5px;
   padding: 10px;
   border: 1px solid var(--primary-color);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 .btn-branding:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 12px;
 }
 .project-description {
-  padding: 120px 60px;
+  padding: 20px 60px;
 }
 .content-container {
   padding: 40px;
@@ -100,13 +114,16 @@ nav li.active a {
   font-size: 25px;
   font-weight: bold;
 }
-footer .email-link {
-  text-decoration: none;
-  color: var(--primary-color);
-  font-size: 20px;
+
+.project-card {
+  margin-bottom: 40px;
 }
-footer .email-link:hover {
-  color: gray;
+.project-card-body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color) !important;
+}
+footer .github-link a:hover {
+  color: var(--hover-color);
 }
 footer .social-links a {
   margin: 0 15px;
@@ -116,6 +133,7 @@ footer .social-links a {
   padding: 10px 14px;
   border-radius: 50%;
   transition: all 100ms ease-in-out;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 footer .social-links a:hover {
   color: var(--primary-color);
@@ -129,8 +147,13 @@ footer .github-link a {
   color: var(--primary-color);
   font-weight: bold;
 }
-footer .github-link a:hover {
-  color: gray;
+
+.home-img {
+  max-height: 400px;
+  border-radius: 50%;
+  display: block;
+  margin: 120px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 960px) {

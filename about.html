@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Tamara is a front-end engineer based in Germany."
+    />
+    <title>Front-end developer - Tamara Dörflinger</title>
     <link rel="stylesheet" href="styles/portfolio.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,19 +35,21 @@
   <body>
     <nav class="d-flex justify-content-end">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li class="active"><a href="/about.html">About</a></li>
-        <li><a href="/work.html">Work</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/" titel="Homepage">Home</a></li>
+        <li class="active">
+          <a href="/about.html" title="About Tamara">About</a>
+        </li>
+        <li><a href="/work.html" titel="Tamara's work">Work</a></li>
+        <li><a href="/contact.html" title="Contact Tamara">Contact</a></li>
       </ul>
     </nav>
     <div class="content-container container">
       <div class="row">
         <div class="col-md-6">
           <div class="content">
-            <h1 class="mt-5">Hi I am Tamara Dörflinger</h1>
+            <h1>Hi I am Tamara Dörflinger</h1>
             <h2>Frontend Developer based in Germany</h2>
-            <p>
+            <p class="mb-4">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -51,7 +57,7 @@
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.
             </p>
-            <a href="" class="btn-branding mt-5">See my Projects</a>
+            <a href="/work.html" class="btn-branding mt-5">See my Projects</a>
           </div>
         </div>
         <div class="col-md-6">
@@ -63,5 +69,23 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="d-flex justify-content-center mt-5 mb-3 social-links">
+        <a
+          href="https://www.linkedin.com/in/tamara-d-393225251/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/tamara-doe" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      <p class="github-link text-center">
+        <a href="https://github.com/tamara-doe/Portfolio" target="_blank"
+          >open source code</a
+        >
+        by Tamara Dörflinger
+      </p>
+    </footer>
   </body>
 </html>
