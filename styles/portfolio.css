@@ -122,6 +122,9 @@ nav li.active a {
   background-color: var(--primary-color);
   color: var(--secondary-color) !important;
 }
+.card-image {
+  height: 400px;
+}
 footer .github-link a:hover {
   color: var(--hover-color);
 }
